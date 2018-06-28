@@ -1,0 +1,9 @@
+<template name="readingContent">
+    <view class='content_container'>
+      <!-- <text class='category'>-{{categoryText}}-</text> -->
+      <text class='title'>{{title}}</text>
+      <text class='author'>文 / {{author.user_name}}</text>
+      <image class='picture' src='{{img_url}}' mode='scaleToFill'></image>
+      <text class='content'>{{forward}}</text>
+    </view>
+</template>

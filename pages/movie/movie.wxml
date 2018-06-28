@@ -1,0 +1,9 @@
+<!--pages/movie/movie.wxml-->
+ <import src="movie-content/movie-content-template.wxml"/>
+<view class="movieContainer">
+  <block wx:for="{{movieList}}" wx:for-item="item" wx:for-index="idx">
+    <view catchtap='openReadingDeteil' data-contents="{{item}}">
+      <template is="movieContent" data="{{...item, idx}}" />
+    </view>
+  </block>
+</view>

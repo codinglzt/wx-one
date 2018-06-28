@@ -1,0 +1,11 @@
+/* pages/movie/movie.wxss */
+@import 'movie-content/movie-content-template.wxss';
+
+.movieContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background-color:  #eee;
+  color: #808080;
+}

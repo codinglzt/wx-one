@@ -1,0 +1,9 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='container' >
+  <image class='bg_img' src="../../images/1.png" mode='aspectFill'></image>
+  <view class='footer'>
+    <text class='day'>6</text>
+    <text class='year_month'>{{datas[0].volume}}|Jun.2018</text>
+    <text class='footer_container'>{{datas[0].forward}}</text>
+  </view>
+</view>

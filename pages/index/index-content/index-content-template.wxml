@@ -1,0 +1,13 @@
+<template name="indexContent">
+    <view class='content_container'>
+      <text class='category'>-{{categoryText}}-</text>
+      <text class='title'>{{title}}</text>
+      <text class='author'>文 / {{author}}</text>
+      <view wx:if="{{category==4}}" class='music_module'>
+        <image  class='picture roundImg' src='{{imgUrl}}' mode='scaleToFill'></image>
+        <view class='play_btn'></view>
+      </view>
+      <image wx:else class='picture' src='{{imgUrl}}' mode='scaleToFill'></image>
+      <text class='content'>{{forward}}</text>
+    </view>
+</template>

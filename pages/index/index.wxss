@@ -1,0 +1,12 @@
+@import "picture-text/picture-text-template.wxss";
+@import "index-content/index-content-template.wxss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background-color:  #eee;
+  color: #808080;
+}
+

@@ -1,0 +1,8 @@
+<template name="pictureText">
+  <view class='picture_text'>
+    <image class='picture' src='{{picContent[0].imgUrl}}' mode='scaleToFill' catchtap='viewImg' data-src='{{picContent[0].imgUrl}}'></image>
+    <text class='author1'>{{picContent[0].title}} | {{picContent[0].author}}</text>
+    <text class='content'>{{picContent[0].forward}}</text>
+    <text class='content_from'>{{picContent[0].wordsFrom}}</text>
+  </view>
+</template>

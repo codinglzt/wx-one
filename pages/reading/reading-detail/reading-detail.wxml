@@ -1,0 +1,15 @@
+<!--pages/reading/reading-detail/reading-detail.wxml-->
+<import src="../../../utils/wxParse/wxParse.wxml" />
+<view class='readingContainer'>
+  <view class='reading-content'>
+    <view class='reading-title'>{{detailContent.hp_title}}</view>
+    <view class='reading-author'>文 / {{detailContent.hp_author}}</view>
+    <view  class='reading'>
+      <template is="wxParse" data="{{wxParseData:reading.nodes}}" />
+    </view>
+    <view class='reading-introduce'>{{detailContent.hp_author_introduce}}</view>
+    <view class='footer-author'>作者</view>
+    <view class='author-information'>
+    </view>
+  </view>
+</view>

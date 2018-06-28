@@ -1,0 +1,69 @@
+<!--pages/index/index-detail/index-detail.wxml-->
+<import src="../../../utils/wxParse/wxParse.wxml" />
+<view class='detailContent'>
+  <!-- 阅读 -->
+  <view class='reading-content' wx:if="{{categoryId == 1}}">
+    <view class='reading-title'>{{detailContent.hp_title}}</view>
+    <view class='reading-author'>文 / {{detailContent.hp_author}}</view>
+    <view  class='reading'>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <view class='reading-introduce'>{{detailContent.hp_author_introduce}}</view>
+    <view class='footer-author'>作者</view>
+    <view class='author-information'>
+    </view>
+  </view>
+  <!-- 连载 -->
+  <view class='reading-content' wx:if="{{categoryId == 2}}">
+    <view class='reading-title serial-title'>{{detailContent.title}}</view>
+    <view class='reading-author'>文 / {{detailContent.author.user_name}}</view>
+    <view  class='reading'>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <view class='reading-introduce'>{{detailContent.charge_edt}}</view>
+    <view class='footer-author'>作者</view>
+    <view class='author-information'>
+    </view>
+  </view>
+  <!-- 问答 -->
+  <view class='reading-content' wx:if="{{categoryId == 3}}">
+    <view class='reading-title serial-title'>{{detailContent.question_title}}</view>
+    <!-- <view class='reading-author'>文 / {{detailContent.author.user_name}}</view> -->
+    <view  class='reading'>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <view class='reading-introduce'>{{detailContent.charge_edt}}</view>
+    <view class='footer-author'>作者</view>
+    <view class='author-information'>
+    </view>
+  </view>
+  <!-- 音乐 -->
+  <view class='reading-content music-content' wx:if="{{categoryId == 4}}">
+    <view class='music-box'>
+      <view class='music-bg-border'></view>
+      <view class="music_bg_s {{!isPlay? 'cd_rotate' : ''}}"  style='background-image:url({{detailContent.cover}})'></view>
+      <view catchtap="onMusicTap" class="play-btn {{isLoding? 'loading' : ''}} {{isPlay? 'on' : ''}}"></view>
+    </view>
+    <view class='reading-title serial-title'>{{detailContent.story_title}}</view>
+     <view class='reading-author'>文 / {{detailContent.story_author.user_name}}</view> 
+    <view  class='reading'>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <view class='reading-introduce'>{{detailContent.charge_edt}}</view>
+    <view class='footer-author'>作者</view>
+    <view class='author-information'>
+    </view>
+  </view>
+  <!-- 影视 -->
+  <view class='reading-content' wx:if="{{categoryId == 5}}">
+    <view class='reading-title serial-title'>{{detailContent.data[0].title}}</view>
+     <view class='reading-author'>文 / {{detailContent.data[0].user.user_name}}</view> 
+    <view  class='reading'>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <view class='reading-introduce'>{{detailContent.data[0].charge_edt}}</view>
+    <view class='footer-author'>作者</view>
+    <view class='author-information'>
+    </view>
+  </view>
+</view>

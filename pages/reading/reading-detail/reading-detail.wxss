@@ -1,0 +1,41 @@
+/* pages/reading/reading-detail/reading-detail.wxss */
+.reading-content {
+  color: black;
+}
+
+.reading-title {
+  font-size: 28px;
+  margin: 20px 20px 0 20px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.reading-author {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-left: 20px;
+  line-height: 32px;
+}
+
+.reading {
+  padding: 0 20px;
+  line-height: 26px;
+  margin-top: 14px;
+  color: #333;
+}
+
+.reading .wxParse-p {
+  margin-bottom: 20px;
+}
+
+.reading-introduce {
+  margin: 20px;
+  color: #808080;
+  font-size: 12px;
+  font-style: oblique;
+}
+
+.footer-author {
+  margin: 20px;
+  font-size: 15px;
+}

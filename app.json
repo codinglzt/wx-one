@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/welcome/welcome",
+    "pages/index/index-detail/index-detail",
+    "pages/reading/reading",
+    "pages/reading/reading-detail/reading-detail",
+    "pages/movie/movie",
+    "pages/movie/movie-detail/movie-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ONE   IS   ALL",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": true
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "ONE",
+      "iconPath": "images/all.png",
+      "selectedIconPath": "images/all-actived.png"
+    }, {
+      "pagePath": "pages/reading/reading",
+      "text": "阅读",
+      "iconPath": "images/office.png",
+      "selectedIconPath": "images/office-actived.png"
+    }, {
+      "pagePath": "pages/movie/movie",
+      "text": "影视",
+      "iconPath": "images/video.png",
+      "selectedIconPath": "images/video-actived.png"
+    }]
+  }
+}

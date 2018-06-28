@@ -1,0 +1,109 @@
+/* pages/index/index-detail/index-detail.wxss */
+.reading-content {
+  color: black;
+}
+
+.reading-title {
+  font-size: 28px;
+  margin: 20px 20px 0 20px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.reading-author {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-left: 20px;
+  line-height: 32px;
+}
+
+.reading {
+  padding: 0 20px;
+  line-height: 26px;
+  margin-top: 14px;
+  color: #333;
+}
+
+.reading .wxParse-p {
+  margin-bottom: 20px;
+}
+
+.reading-introduce {
+  margin: 20px;
+  color: #808080;
+  font-size: 12px;
+  font-style: oblique;
+}
+
+.footer-author {
+  margin: 20px;
+  font-size: 15px;
+}
+
+
+.music-content {
+  display: flex;
+  flex-direction: column;
+}
+.music-box{
+  position:relative;
+  clear:both;
+  height:624rpx;
+}
+.music-bg-border{
+  position:absolute;
+  left:-372rpx;
+  top:-356rpx;
+  width:980rpx;
+  height:980rpx;
+  border-radius:490rpx 490rpx 490rpx 0rpx;
+  box-shadow:0 0 40rpx 10rpx rgba(230,230,230,0.6);
+}
+.music_bg_s{
+  background-color: #888;
+   position:absolute;
+   left:-336rpx;
+   top:-320rpx;
+   width:908rpx;
+   height:908rpx;
+   border-radius:454rpx 454rpx 454rpx 454rpx;
+   background-size:cover;
+   overflow: hidden;
+  -webkit-animation: loading 16s linear infinite .1s;
+    animation: loading 16s linear infinite .1s;
+}
+.music-box .cd_rotate{
+  animation-play-state: paused;
+}
+.play-btn{
+  background-image: url(http://image.wufazhuce.com/music-detail-play.png);
+  background-size: cover;
+  position:absolute;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  left:46rpx;
+  top:62rpx;
+  width:144rpx;
+  height:144rpx;
+}
+.music-box .off{
+	background-image: url(http://image.wufazhuce.com/music-detail-play.png);
+}
+.music-box .on {
+	background-image: url(http://image.wufazhuce.com/music-detail-pause.png);
+}
+
+@keyframes loading {
+    0% {
+        -webkit-transform: rotate(0);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+    }
+}

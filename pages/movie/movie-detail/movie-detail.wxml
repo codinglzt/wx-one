@@ -1,0 +1,15 @@
+<!--pages/reading/reading-detail/reading-detail.wxml-->
+<import src="../../../utils/wxParse/wxParse.wxml" />
+<view class='movieContainer'>
+  <view class='movie-content'>
+    <view class='movie-title'>{{detailContent.title}}</view>
+    <view class='movie-author'>文 / {{detailContent.user.user_name}}</view>
+    <view  class='movie'>
+      <template is="wxParse" data="{{wxParseData:movie.nodes}}" />
+    </view>
+    <view class='movie-introduce'>{{detailContent.charge_edt}}</view>
+    <view class='footer-author'>作者</view>
+    <view class='author-information'>
+    </view>
+  </view>
+</view>

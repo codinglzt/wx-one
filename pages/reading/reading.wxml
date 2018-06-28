@@ -1,0 +1,9 @@
+<!--pages/reading/reading.wxml-->
+ <import src="reading-content/reading-content-template.wxml"/>
+<view class="readingContainer">
+  <block wx:for="{{readingList}}" wx:for-item="item" wx:for-index="idx">
+    <view catchtap='openReadingDeteil' data-contents="{{item}}">
+      <template is="readingContent" data="{{...item, idx}}" />
+    </view>
+  </block>
+</view>

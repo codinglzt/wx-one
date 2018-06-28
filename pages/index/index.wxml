@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<import src="picture-text/picture-text-template.wxml" />
+<import src="index-content/index-content-template.wxml" />
+<view class="container">
+  <template is="pictureText" data="{{picContent}}" />
+  <block wx:for="{{contents}}" wx:for-item="item" wx:for-index="idx">
+    <view catchtap='openDeteil' data-contents="{{item}}">
+      <template is="indexContent" data="{{...item, idx}}" />
+    </view>
+  </block>
+</view>
